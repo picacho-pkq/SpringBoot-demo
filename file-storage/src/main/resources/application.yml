@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: fileStorage
+  thymeleaf:
+    cache: false
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fileservice?serverTimezone=Asia/Shanghai&userUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+
+server:
+  port: 8080
+  servlet:
+    context-path: /fileStorage
+
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+  type-aliases-package: com.pikacho.fileStorage.entity
+
+logging:
+  level:
+    root: info
+    com.pikacho.fileServer: debug
+
