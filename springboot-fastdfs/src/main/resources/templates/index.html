@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="mf">
+    <input type="submit" value="上传">
+</form>
+
+<br/>
+
+<form action="/download" method="post" >
+   <input type="text" name="fileUrl">
+    <input type="submit" value="下载">
+</form>
+
+</body>
+</html>

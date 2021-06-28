@@ -1,0 +1,16 @@
+# ===================================================================
+# �ֲ�ʽ�ļ�ϵͳFDFS����
+# ===================================================================
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image:             #����ͼ���ɲ���
+    width: 150
+    height: 150
+  tracker-list:            #TrackerList����,֧�ֶ��
+    - 192.168.241.130:22122
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
